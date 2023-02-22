@@ -32,7 +32,8 @@ The data needs to be processed to fit the machine learning models. Since there i
 
 * Find the best value for K by calculating the inertia for the range of K values with a for loop
 * Create an Elbow Curve to find the best value for K 
-<img width="638" alt="Elbow curve" src="https://user-images.githubusercontent.com/111904266/220729295-d15f22ab-3bdd-4e3c-a1d2-1b9ac7c47027.png">  
+<img width="638" alt="Elbow curve" src="https://user-images.githubusercontent.com/111904266/220729295-d15f22ab-3bdd-4e3c-a1d2-1b9ac7c47027.png">    
+
 * Initialize the K-Means model
 * Fit the K-Means model
 * Predict the K-Means model as an array
@@ -49,16 +50,22 @@ The data needs to be processed to fit the machine learning models. Since there i
 
 * Create a table with tradable cryptocurrencies
 * There are 532 tradable cryptocurrencies
+* Scale and fit the tradable cryptocurrencies with MinMaxScaler().fit_transform()
+* Create a new DataFrame with tradable cryptocurrencies and index from original dataset
+  * Include the "CoinName" column
+  * Include the "Class" column
+* Create a hvplot.scatter using x="TotalCoinsMined" and y="TotalCoinSupply" from the newst DataFrame
 
+<img width="644" alt="hvplot scatter" src="https://user-images.githubusercontent.com/111904266/220731881-edec7450-31af-464f-9838-374df8f92d06.png">
 
 
 **** 
 ### Resources: 
-** Data: **
-crypto_data.csv retrieved from crytocompare.com 
+**Data:**
+crypto_data.csv retrieved from crytocompare.com   
   https://min-api.cryptocompare.com/data/all/coinlist
   
-** Technologies used: **
+**Technologies used:**
 * Jupyter Notebooks
 * Python
 * Pandas
